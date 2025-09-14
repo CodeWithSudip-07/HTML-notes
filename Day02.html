@@ -21,6 +21,160 @@
         </table>
     </header>
     <main>
+        <h1>HTML Lists</h1>
+        <p>An <b>HTML</b> list is a way to display multiple items in a structured form, either with numbers, bullets, or definitions.</p>
+
+        <h2>Types of HTML Lists</h2>
+        <p>There are three main types of lists in HTML:</p>
+        <ol>
+            <li><b>Unordered Lists (&ltul&gt):</b>
+                <ul>
+                    <li>Displays items with bullets (●, ○, ■).</li>
+                    <li>Order doesn't matter.</li>
+                    <li>Each item is written inside &ltli&gt (list item).</li>
+                    <li>Example:<br/><img src="./images2/ul.png" alt="ul example"></li>
+                </ul> 
+            </li>
+            <li><b>Ordered Lists (&ltol&gt):</b>
+                <ul>
+                    <li>Displays items with numbers/letters/roman numerals.</li>
+                    <li>Order matters.</li>
+                    <li>Also uses &ltli&gt for each item.</li>
+                    <li>Example:<br/><img src="./images2/ol.png" alt="ol image"></li>
+                </ul>
+            </li>
+            <li><b>Description Lists (&ltdl&gt):</b>
+                <ul>
+                    <li>Used for terms and their definitions.</li>
+                    <li>Uses:
+                        <ol>
+                            <li><b>&ltdt&gt :</b> Description Term (word)</li>
+                            <li><b>&ltdd&gt :</b> Description Definition (explanation)</li>
+                        </ol>
+                    </li>
+                    <li>Example:<br/><img src="./images2/dl.png" alt="dl image"></li>
+                    
+                </ul>
+            </li>
+        </ol>
+
+        <h2>HTML List Tags</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&ltul&gt</td>
+                    <td>Defines an unordered list.</td>
+                </tr>
+                <tr>
+                    <td>&ltol&gt</td>
+                    <td>Defines an ordered list.</td>
+                </tr>
+                <tr>
+                    <td>&ltli&gt</td>
+                    <td>Defines a list item.</td>
+                </tr>
+                <tr>
+                    <td>&ltdl&gt</td>
+                    <td>Defines a description list.</td>
+                </tr>
+                <tr>
+                    <td>&ltdt&gt</td>
+                    <td>Defines a term in a description list.</td>
+                </tr>
+                <tr>
+                    <td>&ltdd&gt</td>
+                    <td>Details the term in a description list.</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr/>
+        <h1>HTML Tables</h1>
+        <p>An <b>HTML</b> table is a way to arrange data in rows and columns.</p>
+        <h2>Basic HTML Table Structure</h2>
+        <p>An HTML table is created using the &lttable&gt tag. Inside the table, we use:</p>
+        <ul>
+            <li><b><u>&lttr&gt:</u></b> Table Row</li>
+            <li><b><u>&ltth&gt:</u></b> Table Header</li>
+            <li><b><u>&lttd&gt:</u></b> Table Data</li>
+        </ul>
+            
+        <p>Each <b>&lttr&gt</b> represents a row, and within each row, <b>&ltth&gt</b> and <b>&lttd&gt</b> tags represent the cells in that row, which can contain text, images, lists, or even another table(discuss below).</p>
+        <img src="./images2/HTML-Tables.webp" alt="html table image">
+        <h2>HTML Table Code Example</h2>
+        <img src="./images2/code.png" alt="table code image">
+        <p>output:</p>
+        <img src="./images2/output.png" alt="output image">
+        <p>In this Example:</p>
+        <ul>
+            <li><b>&lttable&gt:</b> This tag starts the table. Everything between the opening &lttable&gt and closing &lttable&gt tags makes up the table.</li>
+            <li><b>&lttr&gt:</b> Stands for "table row". Each &lttr&gt tag defines a row in the table.</li>
+            <li><b>&ltth&gt:</b> Stands for "table header". It's used for the headers of the columns. In this case, <b>"Firstname"</b>, <b>"Lastname"</b>, and <b>"Age"</b> are headers. Text in &ltth&gt tags is usually bold and centered by default.</li>
+            <li><b>&lttd&gt:</b> Stands for "table data". This tag is used for actual data cells under each column. For instance, <b>"Priya"</b> is the data under the <b>"Firstname"</b> header, <b>"Sharma"</b> under the <b>"Lastname"</b>, and <b>"24"</b> under the <b>"Age"</b>.</li>
+            <li>The first <b>&lttr&gt</b> has three &lttr&gt elements, setting up the column titles.</li>
+            <li>The subsequent &lttr&gt tags contain three &lttd&gt elements, representing the data for each person listed in the table.</li>
+        </ul>
+        <p>When this HTML code is rendered in a web browser, it will display a table with four rows (one header row plus three data rows) and three columns (Firstname, Lastname, and Age), showing the names and ages of Priya, Arun, and Sam.</p>
+        <h2>HTML Tables Tags</h2>
+        <p>Here, is the list of all the tags that we used in table formation in html.</p>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lttable&gt</td>
+                    <td>Defines the structure for organizing data in rows and columns within a web page.</td>
+                </tr>
+                <tr><td>&lttr&gt</td>
+                    <td>Represents a <b>row</b> within an HTML table containing individual cells.</td></tr>
+                <tr>
+                    <td>&ltth&gt</td>
+                    <td>Shows a table <b>header</b> cell that typically holds titles or headings.</td>
+                </tr>
+                <tr>
+                    <td>&lttd&gt</td>
+                    <td>Represents a standard <b>data</b> cell, holding content or data.</td>
+                </tr>
+                <tr>
+                    <td>&ltcaption&gt</td>
+                    <td>Provides a title or description for the entire table.</td>
+                </tr>
+                <tr>
+                    <td>&ltthead&gt</td>
+                    <td>Defines the header section of a table, often containing column labels.</td>
+                </tr>
+                <tr>
+                    <td>&lttbody&gt</td>
+                    <td>Represents the main content area of a table, separating it from the header or footer.</td>
+                </tr>
+                <tr>
+                    <td>&lttfoot&gt</td>
+                    <td>Specifies the footer section of a table, typically holding summaries or totals.</td>
+                </tr>
+                <tr>
+                    <td>&ltcol&gt</td>
+                    <td>Defines attributes for table <b>columns</b> that can be applied to multiple columns simultaneously.</td>
+                </tr>
+                <tr>
+                    <td>&ltcolgroup&gt</td>
+                    <td>Groups together a <b>set of columns</b> in a table to which you can apply formatting or properties collectively.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Example of adding a Border to an HTML Table:</h2>
+        <p>Example:</p>
+        <img src="./images2/code2.png" alt="table code image">
+        <p>Output:</p>
+        <img src="./images2/output2.png" alt="output image">
         
     </main>
     <footer>

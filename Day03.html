@@ -9,19 +9,172 @@
     <header>
         <table >
             <tr>
-                <th><a href="project1.html">Home</a></th>
-                <th><a href="introduction.html">Introduction</a></th>
-                <th><a href="Day01.html">HTML-day01</a></th>
-                <th><a href="Day02.html">HTML-day02</a></th>
-                <th><a href="Day03.html">HTML-day03</a></th>
-                <th><a href="Day04.html">HTML-day04</a></th>
-                <th><a href="Day05.html">HTML-day05</a></th>
+                <th><a href="project1.html">Home |</a></th>
+                <th><a href="introduction.html">Introduction |</a></th>
+                <th><a href="Day01.html">HTML-DAY 01 |</a></th>
+                <th><a href="Day02.html">HTML-DAY 02 |</a></th>
+                <th><a href="Day03.html">HTML-DAY 03 |</a></th>
+                <th><a href="Day04.html">HTML-DAY 04 |</a></th>
+                <th><a href="Day05.html">HTML-DAY 05 </a></th>
                 
             </tr>
         </table>
     </header>
     <main>
+        <h1>&#127760 HTML Day03</h1>
+        <br/>
+        <h2>&#9775 <u>File Path system:-</u></h2>
+        <ul>
+            <li><b>Relative File Path:</b> Points to a file in relation to the current HTML page's location. Examples include files in the same folder, subfolders, or parent folders.
+                <ol>
+                    <br/>
+                    <li><u>Example Same Folder:</u>
+                        <b>&ltimg src="picture.jpg"&gt</b>
+                        (image is in the same folder as HTML).</li>
+                        <br/>
+                    <li><u>Example Subfolder:</u>
+                        <b>&ltimg src="images/picture.jpg"&gt</b>
+                        (image is in images subfolder).</li>
+                        <br/>
+                    <li><u>Example Parent Folder:</u>
+                        <b>&ltimg src="../picture.jpg"&gt</b>
+                        (image is one level up from the current folder).</li>
+                        <br/>
+                </ol>
+            </li>
+            <li><b>Absolute File Path:</b> Uses the full URL or complete address to point directly to a resource, regardless of the HTML file location.
+                <ol>
+                    <br/>
+                    <li><u>Example:</u>
+                        <b>&ltimg src="https://example.com/images/picture.jpg"&gt</b>
+                        (image is hosted online at the specified address).</li>
+                </ol>
+            </li>
+        </ul>
+        <br/><br/>
+        <h2>&#9775 <u>HTML Boilerplate Code:-</u></h2>
         
+        <p>Boilerplate code is the essential starting template for any HTML page. It includes the document type, html, head, and body sections as shown below:</p>
+        <br/>
+        <img src="./images3/Screenshot 2025-09-17 132924.png" alt="html boiler plate code">
+        <br/>
+        <h3>&#129034 <i>Explanation of Each Element</i></h3>
+        <ol>
+            <li><b>&lt!DOCTYPE html&gt</b>
+                <ul>
+                    <br/>
+                    <li>Declares the type of document.</li>
+                    <li>Tells the browser to render the page using HTML5 standards.</li>
+                    <li>Must be the first line in an HTML document.</li>
+                </ul>
+            </li>
+            <br/>
+            <li><b>&lthtml lang="en"&gt ... &lt/html&gt</b>
+                <ul>
+                    <br/>
+                    <li>The root element of the HTML document.</li>
+                    <li>All other elements are written inside it.</li>
+                    <li>lang="en" specifies the language of the page (English in this case).</li>
+                </ul>
+                <br/>
+            </li>
+            <li><b>&lthead&gt ... &lt/head&gt</b>
+                <ul>
+                    <br/>
+                    <li>Contains metadata (information about the document).</li>
+                    <li>Metadata is not displayed directly on the webpage.</li>
+                    <li>Includes title, character encoding, viewport settings, styles, and links.</li>
+            <p><b>Inside &lthead&gt:</b></p>
+                    <li><b>&ltmeta charset="UTF-8"&gt</b>
+                        <p>Defines the character encoding (UTF-8 supports most world languages and symbols).</p>
+                    </li>
+                    <li><b>&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt</b>
+                    <p>Ensures the webpage is responsive on different devices.</p>
+                    <ol>
+                        <li><b>width=device-width →</b> matches the screen width.</li>
+                        <li><b>initial-scale=1.0 →</b> sets the initial zoom level.</li>
+                        <br/>
+                    </ol>
+                    </li>
+                    <li><b>&lttitle&gtDocument&lt/title&gt</b>
+                        <p>The title of the webpage.</p>
+                        <ol>
+                            <li>Appears in the browser's tab.</li>
+                            <li>Important for SEO (search engine optimization).</li>
+                        </ol>
+                    </li>
+                </ul>
+                <br/>
+            </li>
+            <li><b>&ltbody&gt ... &lt/body&gt</b>
+                <ul>
+                    <br/>
+                    <li>Contains the main visible content of the webpage.</li>
+                    <li>Anything written inside <b>&ltbody&gt</b> is displayed in the browser</li>
+                    <li>Examples: headings, paragraphs, images, links, forms, etc.</li>
+                </ul>
+            </li>
+        </ol></b>
+        <p>The boilerplate ensures a standard starting point for every webpage and is expanded as per project requirements <b>(e.g., adding CSS, JavaScript, external libraries)</b>.</p>
+        <br/><br/>
+
+        <h2>&#9775 <u>Multipage Website:-</u></h2>
+        <ul>
+            <li><b>&ltdiv&gt Tag</b>
+                <ol>
+                    <br/>
+                    <li>The <b>&ltdiv&gt</b> (division) tag is used as a container to group other HTML elements.</li>
+                    <li>It has no semantic meaning on its own but is often used for styling with CSS or grouping sections.</li>
+                    <li>Example:<br/><br/><img src="./images3/div.png" alt="div tag image"></li>
+                </ol>
+            </li>
+            <br/>
+            <li><b>Class</b>
+                <ol>
+                    <br/>
+                    <li>The class attribute is used to apply a style or behavior to multiple elements.</li>
+                    <li>You can use the same class on multiple elements.</li>
+                    <li>Example:<br/><br/><img src="./images3/class.png" alt="class image"></li>
+                </ol>
+            </li>
+            <br/>
+            <li><b>ID</b>
+                <ol>
+                    <br/>
+                    <li>The id attribute uniquely identifies a single element in the document.</li>
+                    <li>Each id value must be unique across the entire HTML page.</li>
+                    <li>Example:<br/><br/><img src="./images3/id.png" alt="id image"></li>
+                </ol>
+            </li>
+            <br/>
+            <li><b>&ltheader&gt Tag</b>
+                <ol>
+                    <br/>
+                    <li>Defines the introductory content or a navigation section at the top of a page or section.</li>
+                    <li>Usually contains a logo, site title, and navigation links.</li>
+                    <li>Example:<br/><br/><img src="./images3/header.png" alt="header image"></li>
+                </ol>
+            </li>
+            <br/>
+            <li><b>&ltmain&gtTag</b>
+                <ol>
+                    <br/>
+                    <li>Represents the main content of the page.</li>
+                    <li>Each page should have only one <b>&ltmain&gt</b> element.</li>
+                    <li>Example:<br/><br/><img src="./images3/main.png" alt="main tag"></li>
+                </ol>
+            </li>
+            <br/>
+            <li><b>&ltfooter&gtTag</b>
+                <ol>
+                    <br/>
+                    <li>Represents the footer section of a page or section.</li>
+                    <li>Usually contains information like copyright, contact details, or links.</li>
+                    <li>Example:<br/><br/><img src="./images3/footer.png" alt="footer image"></li>
+                </ol>
+            </li>
+            <br/>
+        </ul>
     </main>
     <footer>
         <hr>

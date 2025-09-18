@@ -22,8 +22,295 @@
             </thead>
         </table>
     </header>
+    <hr/>
     <main>
-        <h1>This is Web Development Interduction Page</h1>
+        <h1>&#127760 HOW Does Internet Work</h1>
+
+        <h2>&#128304 IP Address</h2>
+        <ol>
+            <li><b>Definition:</b>
+                <p>An IP (Internet Protocol) address is a unique numerical label assigned to each device connected to a network that uses the Internet Protocol for communication.</p>
+            </li>
+            <li><b>Purpose:</b>
+                <ul>
+                    <br/>
+                    <li>Identifies a device on the network.</li>
+                    <li>Provides the device's location in the network.</li>
+                </ul>
+            </li>
+            <br/>
+            <li><b>Format:</b>
+                <ul>
+                    <br/>
+                    <li>Written as numbers separated by dots (IPv4) or colons (IPv6).</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3>&#128311 <u>Public IP Address</u></h3>
+        <ol>
+            <li><b>Definition:</b>
+                <p>A Public IP address is the address assigned to a device that is directly accessible over the internet.</p>
+            </li>
+            <li><b>Features:</b>
+                <ul>
+                    <br/>
+                    <li>Globally unique.</li>
+                    <li>Provided by Internet Service Providers (ISP).</li>
+                    <li>Used to communicate outside the private/local network.</li>
+                </ul>
+            </li>
+            <br/>
+            <li><b>Example:</b> 103.21.244.0</li>
+        </ol>
+
+        <h3>&#128311 <u>Private IP Address</u></h3>
+        <ol>
+            <li><b>Definition:</b>
+                <p>A Private IP address is used within a local/private network (LAN). It is not accessible directly from the internet.</p>
+            </li>
+            <li><b>Features:</b>
+                <ul>
+                    <br/>
+                    <li>Used for communication within home, office, or internal networks.</li>
+                    <li>Devices with private IP connect to the internet through NAT (Network Address Translation).</li>
+                    <li>Same private IP ranges can be reused in different networks.</li>
+                </ul>
+            </li>
+            <br/>
+            <li><b>Private IP ranges (IPv4):</b>
+                <ul>
+                    <br/>
+                    <li>10.0.0.0 - 10.255.255.255</li>
+                    <li>172.16.0.0 - 172.31.255.255</li>
+                    <li>192.168.0.0 - 192.168.255.255</li>
+                </ul>
+            </li>
+            <br/>
+            <li><b>Example:</b> 192.168.1.1</li>
+        </ol>
+
+        <h2>&#128304 IPv6 (Internet Protocol version 6)</h2>
+        <ol>
+            <li><b>Definition:</b>
+                <p>IPv6 is the most recent version of Internet Protocol designed to replace IPv4, which is running out of unique addresses.</p>
+            </li>
+            <li><b>Reasons for IPv6:</b>
+                <ul>
+                    <br/>
+                    <li>IPv4 has about 4.3 billion unique addresses (limited).</li>
+                    <li>IPv6 supports 340 undecillion (3.4 x 10³⁸) unique addresses.</li>
+                </ul>
+            </li>
+            <br/>
+            <li><b>Features of IPv6:</b>
+                <ul>
+                    <br/>
+                    <li>128-bit address length.</li>
+                    <li>Written in hexadecimal format, separated by colons.</li>
+                    <li>More efficient routing and network auto-configuration.</li>
+                    <li>Better support for mobile devices and IoT.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3>&#128311 <u>How Does an IPv6 Address Look Like?</u></h3>
+        <ol>
+            <li><b>Format:</b>8 groups of 4 hexadecimal digits, separated by colons (:).</li>
+            <br/>
+            <li><b>Example:</b>
+                <ul>
+                    <br/>
+                    <li>Full form: 2001:0db8:0000:0000:0000:ff00:0042:8329</li>
+                    <li>Compressed form (leading zeros omitted): 2001:db8::ff00:42:8329</li>
+                </ul>
+            </li>
+        </ol>
+
+
+
+
+    <h2>&#128304 MAC Address</h2>
+    <p>
+        A <b>MAC Address (Media Access Control Address)</b> is a unique identifier 
+        assigned to a device's <b>network interface card (NIC)</b>.
+    </p>
+    <ul>
+        <li><b>Format:</b>
+            <ul>
+                <li>48-bit (6-byte) number.</li>
+                <li>Written in hexadecimal (0-9, A-F).</li>
+                <li>Separated by colons (:) or hyphens (-).</li>
+                <li>Example: 00:1A:2B:3C:4D:5E</li>
+            </ul>
+        </li>
+        <li><b>Purpose:</b>
+            <ul>
+                <li>Identifies a device physically on a local network (LAN).</li>
+                <li>Works at the Data Link Layer (Layer 2) of the OSI model.</li>
+                <li>Used for communication inside a network segment.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>&#128311 <u>How to Find MAC Address in Windows</u></h3>
+    <ul>
+        <li><h4>Method 1: Using Command Prompt</h4></li>
+            <ol>
+                <li>Press <b>Windows + R</b>, type <code>cmd</code>, and press Enter.</li>
+                <li>In the Command Prompt window, type:</li>
+    
+                <img src="./introimages/Screenshot 2025-09-18 082952.png" alt="">
+                <br/>
+                <li>Look for <b>“Physical Address”</b> under your active network adapter.
+                    <ul>
+                        <li>Example: 00-14-22-01-23-45</li>
+                    </ul>
+                </li>
+            </ol>
+
+        <li><h4>Method 2: Using Settings</h4></li>
+            <ol>
+                <li>Open <b>Settings</b> → <b>Network & Internet</b>.</li>
+                <li>Select <b>Wi-Fi</b> or <b>Ethernet</b>.</li>
+                <li>Click on the network name → scroll down to find <b>Physical (MAC) Address</b>.</li>
+            </ol>
+    </ul>
+    <h3>&#128311 <u>How to Find MAC Address in macOS</u></h3>
+    <ul>
+
+        <li><h4>Method 1: Using System Preferences</h4></li>
+            <ol>
+                <li>Click on the <b>Apple Menu</b> → <b>System Settings</b> (or         <b>System Preferences</b>).</li>
+                <li>Go to <b>Network</b>.</li>
+                <li>Select your active connection (Wi-Fi or Ethernet) and click         <b>Advanced</b>.</li>
+                <li>Under <b>Hardware</b> or <b>Wi-Fi tab</b>, you'll see the       <b>MAC Address</b>.</li>
+            </ol>
+
+        <li><h4>Method 2: Using Terminal</h4></li>
+            <ol>
+                <li>Open <b>Terminal</b> (Applications → Utilities → Terminal).</li>
+                <li>Type the following command and press Enter:</li>
+    
+                <img src="./introimages/Screenshot 2025-09-18 083458.png" alt="">
+                <li>Look for <b>“ether”</b> followed by the MAC address.Example: ac:de:48:00:11:22</li>
+            </ol>
+    </ul>
+
+
+
+    <h2>&#128304 Port Numbers</h2>
+    <ul>
+
+        <li><u><h3>What is a Port Number?</h3></u></li>
+            <p>A <b>Port Number</b> is a numerical identifier used in networking to distinguish different processes or services on a single device.</p>
+            <ul>
+                <li>Works at the <b>Transport Layer (Layer 4)</b> of the OSI model.     </li>
+                <li>Allows multiple services (e.g., web, email, FTP) to run on the same device using the same IP address.</li>
+                <li><b>Format:</b> 16-bit unsigned integer, range <b>0 to 65535</b>.        </li>
+            </ul>
+
+        <li><u><h3>Types of Port Numbers</h3></u></li>
+            <ol>
+
+                <li><h4>Well-Known Ports (Range: 0 - 1023)</h4></li>
+                    <p>Assigned and controlled by <b>IANA (Internet Assigned Numbers Authority)</b>. Used by widely recognized services and protocols.</p>
+                    <ul>
+                        <li>Port 20, 21 → FTP (File Transfer Protocol)</li>
+                        <li>Port 22 → SSH (Secure Shell)</li>
+                        <li>Port 23 → Telnet</li>
+                        <li>Port 25 → SMTP (Simple Mail Transfer Protocol)</li>
+                        <li>Port 53 → DNS (Domain Name System)</li>
+                        <li>Port 80 → HTTP (Web)</li>
+                        <li>Port 443 → HTTPS (Secure Web)</li>
+                    </ul>
+
+                <li><h4>Registered Ports (Range: 1024 - 49151)</h4></li>
+                    <p>Also maintained by IANA. Used by software applications that are not as common as well-known services.</p>
+                    <ul>
+                        <li>Port 1433 → Microsoft SQL Server</li>
+                        <li>Port 3306 → MySQL Database</li>
+                        <li>Port 3389 → Remote Desktop Protocol (RDP)</li>
+                    </ul>
+
+                <li><h4>Dynamic / Private / Ephemeral Ports (Range: 49152 - 65535)</h4></li>
+                    <p>Not registered with IANA. Used temporarily by client devices when connecting to servers. Assigned automatically by the operating system.</p>
+                    <ul>
+                        <li>Released after the connection ends.</li>
+                        <li>Example: A browser may use port <code>50234</code> (ephemeral) to connect to a server on port 80 (HTTP) or 443 (HTTPS).</li>
+                    </ul>
+            </ol>
+    </ul>
+
+
+    <h2>&#128304 DNS (Domain Name System) Notes</h2>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+        <tr>
+            <th>Topic</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><strong>Definition</strong></td>
+            <td>DNS (Domain Name System) is the “phonebook of the internet,” which translates domain names into IP addresses.</td>
+        </tr>
+
+        <tr>
+            <td><strong>Purpose</strong></td>
+            <td>Converts human-readable names (e.g., <code>google.com</code>) into machine-readable IP addresses (e.g., <code>142.250.183.78</code>).</td>
+        </tr>
+
+        <tr>
+            <td><strong>How it Works</strong></td>
+            <td>
+                User enters a domain → DNS resolver checks cache → Queries Root Server → TLD Server → Authoritative Server → Returns IP to browser.
+            </td>
+        </tr>
+
+        <tr>
+            <td><strong>Components</strong></td>
+        <td>
+            <ul>
+                <li><strong>DNS Resolver:</strong> Starts the query process.</li>
+                <li><strong>Root Servers:</strong> First step in DNS hierarchy. </li>
+                <li><strong>TLD Servers:</strong> Handle domain extensions like     <code>.com</code>, <code>.org</code>.</li>
+                <li><strong>Authoritative Servers:</strong> Provide the final DNS records.</li>
+            </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td><strong>Types of DNS Records</strong></td>
+            <td>
+            <ul>
+                <li><strong>A Record:</strong> Domain → IPv4 address.</li>
+                <li><strong>AAAA Record:</strong> Domain → IPv6 address.</li>
+                <li><strong>CNAME Record:</strong> Alias for another domain.</li>
+                <li><strong>MX Record:</strong> Email server information.</li>
+                <li><strong>NS Record:</strong> Authoritative name servers.</li>
+            </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td><strong>Importance</strong></td>
+            <td>
+            <ul>
+                <li>Makes browsing easier for users.</li>
+                <li>Essential for the scalability of the internet.</li>
+                <li>Supports websites, email delivery, and other online services.</li>
+            </ul>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+
     </main>
     <footer>
         <hr>
